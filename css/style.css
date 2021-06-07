@@ -1,0 +1,117 @@
+/*Fonts
+=============================================================
+=============================================================*/
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;600&display=swap');
+@font-face {
+	font-family: "LetterGothic";
+	src: url("../fonts/LetterGothicStd.otf") format("truetype"); 
+	font-style: normal; 
+	font-weight: normal; 
+} 
+
+/*Variables
+=============================================================
+=============================================================*/
+
+:root{
+    --brand-color-1: #3081AC;
+    --brand-color-1-hover: #266687;
+    --brand-color-2: #86A4A6;
+    --error-color-1: #FF515AFF;
+    --background-color-1: #f1f2f4;
+    --border-color: #b8cdd8;
+}
+
+*{
+	font-family: 'Montserrat', sans-serif;
+}
+
+body{
+	background-color: var(--background-color-1);
+}
+
+.margin-5{
+	margin: 5px;
+}
+
+.disabled{
+	opacity: 0.7;
+	cursor: default;
+}
+
+.flex_center{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.app_main{
+	float: right;
+	width: calc(100% - 250px);
+	transition: .5s;
+}
+
+.app_main_full{
+	width: 100%;
+}
+
+.breadcrumb-item a{
+	color: var(--brand-color-1);
+}
+
+.breadcrumb{
+	margin: 0;
+}
+
+.btn-primary{
+	background-color: var(--brand-color-1);
+	border-color: var(--brand-color-1);
+}
+
+.btn-cancel{
+	background-color: var(--brand-color-2);
+	border-color: var(--brand-color-2);
+	color: white;
+}
+
+.btn-container{
+	padding: 10px;
+	justify-content: space-around;
+	width: 100%;
+}
+
+.app_content__tools{
+	padding: 20px 0;
+}
+
+.editBlock{
+	width: 270px;
+	max-width: 300px;
+	padding: 20px 0;
+	flex-direction: column;
+	margin: auto;
+}
+
+.table_empty{
+	flex-direction: column;
+	height: 300px;
+}
+
+.img_empty{
+	width: 150px;
+}
+
+.img_empty img{
+	width: 100%;
+}
+
+
+@media (max-width: 950px){
+	.app_content__tools{
+		flex-direction: column;
+	}
+	.app_main{
+		width: 100%;
+	}
+}
